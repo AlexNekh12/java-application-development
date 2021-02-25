@@ -9,8 +9,11 @@ public class Facade {
     /**
      * message != null
      */
+    static int var = 1; //static, global
+
     //@Contract(!null -> !null)
     public static void log(/* @NotNull */ int message) {
+        int i; // stack, auto, local
         if (message <= 0) throw new IllegalArgumentException();
         //--implementation как?--
         printToConsole(message);
