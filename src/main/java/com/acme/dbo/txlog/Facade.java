@@ -23,7 +23,6 @@ public class Facade {
         printToConsole(message);
     }
 
-
     private static void printToConsole(int message) {
         System.out.println("primitive: " + message);
     }
