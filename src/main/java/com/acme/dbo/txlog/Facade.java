@@ -10,7 +10,11 @@ public class Facade {
      * message != null
      */
     static int var = 1; //static, global
+    public static final int MY_CONST = 2;
 
+    static {
+        System.out.println("static block");
+    }
     //@Contract(!null -> !null)
     public static void log(/* @NotNull */ int message) {
         int i; // stack, auto, local
